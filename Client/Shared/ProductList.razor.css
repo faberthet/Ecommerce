@@ -1,0 +1,11 @@
+﻿body {
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius:6px;
+    transition: transform .2s;
+}
+img:hover{
+    transform: scale(1.1);
+}
