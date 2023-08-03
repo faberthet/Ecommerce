@@ -1,9 +1,10 @@
-﻿using BlazorEcommerce.Server.Data;
-using BlazorEcommerce.Shared;
+﻿
+using Ecommerce7.Server.Data;
+using Ecommerce7.Shared;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata.Ecma335;
 
-namespace BlazorEcommerce.Server.Services.ProductService
+namespace Ecommerce7.Server.Services.ProductService
 {
     public class ProductService : IProductService
     {
@@ -15,8 +16,8 @@ namespace BlazorEcommerce.Server.Services.ProductService
         }
         public async Task<ServiceResponse<List<Product>>> GetProductsAsync()
         {
-            var response = new ServiceResponse<List<Product>>() { 
-                Data = await _context.Products.ToListAsync() 
+            var response = new ServiceResponse<List<Product>>() {
+                Data = await _context.Products.ToListAsync()
             };
             return response;
         }

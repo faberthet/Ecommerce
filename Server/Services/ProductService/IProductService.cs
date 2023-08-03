@@ -1,6 +1,7 @@
-﻿using BlazorEcommerce.Shared;
+﻿
+using Ecommerce7.Shared;
 
-namespace BlazorEcommerce.Server.Services.ProductService
+namespace Ecommerce7.Server.Services.ProductService
 {
     public interface IProductService
     {

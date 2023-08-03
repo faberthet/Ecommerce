@@ -1,7 +1,8 @@
-﻿using BlazorEcommerce.Shared;
+﻿
+using Ecommerce7.Shared;
 using System.Net.Http.Json;
 
-namespace BlazorEcommerce.Client.Services.ProductService
+namespace Ecommerce7.Client.Services.ProductService
 {
     public class ProductService : IProductService
     {

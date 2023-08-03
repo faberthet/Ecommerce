@@ -1,9 +1,11 @@
-﻿using BlazorEcommerce.Server.Services.ProductService;
-using BlazorEcommerce.Shared;
+﻿
+
+using Ecommerce7.Server.Services.ProductService;
+using Ecommerce7.Shared;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BlazorEcommerce.Server.Controllers
+namespace Ecommerce7.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
