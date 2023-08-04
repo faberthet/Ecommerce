@@ -9,5 +9,7 @@ namespace Ecommerce7.Server.Services.ProductService
 
         Task<ServiceResponse<Product>> GetProductByIdAsync(int id);
 
+        Task<ServiceResponse<List<Product>>> GetProductByCategory(string categoryUrl);
+
     }
 }

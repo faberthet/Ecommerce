@@ -1,3 +1,4 @@
+using Ecommerce7.Server.Services.ProductService;
 using Ecommerce7.Server.Data;
 using Ecommerce7.Server.Services.CategoryService;
 using Microsoft.AspNetCore.ResponseCompression;
@@ -18,6 +19,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
+builder.Services.AddScoped<IProductService, ProductService>(); 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 

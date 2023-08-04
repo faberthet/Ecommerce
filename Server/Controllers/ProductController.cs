@@ -29,10 +29,18 @@ namespace Ecommerce7.Server.Controllers
         [HttpGet]
         [Route("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
-       {
+        {
             var product = await _productService.GetProductByIdAsync(id);
             
             return Ok(product);
+        }
+
+        [HttpGet]
+        [Route("category/{categoryUrl")]
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProductsByCategory(string categoryUrl)
+        {
+            var result = await _productService.GetProductByCategory(categoryUrl);
+            return Ok(result);
         }
     }
 }
